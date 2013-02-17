@@ -1,7 +1,7 @@
 Summary:	Unity instrumenting and integration library
 Name:		libunity
 Version:	5.12.0
-Release:	1
+Release:	2
 License:	LGPL v3
 Group:		Libraries
 URL:		http://launchpad.net/libunity
@@ -24,6 +24,7 @@ and add places in Unity environment.
 %package devel
 Summary:	Unity instrumenting and integration library - development files
 Group:		Development/Libraries
+Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This package provides the development files required to build
@@ -42,9 +43,10 @@ with the launcher and add places in Unity environment.
 
 %build
 %configure \
+	--disable-silent-rules \
 	--disable-static \
 	--enable-gtk-doc
-%{__make} V=1
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT

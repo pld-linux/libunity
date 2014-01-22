@@ -6,7 +6,7 @@ Summary:	Unity instrumenting and integration library
 Summary(pl.UTF-8):	Biblioteka oprzyrządowania i integracji Unity
 Name:		libunity
 Version:	6.12.0
-Release:	1
+Release:	2
 License:	LGPL v3
 Group:		Libraries
 Source0:	https://launchpad.net/libunity/6.0/%{version}/+download/%{name}-%{version}.tar.gz
@@ -93,7 +93,7 @@ Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 Requires:	vala >= 2:0.16.0
 Requires:	vala-dee >= 1.0.14
-Requires:	vala-libdbusmenu-devel >= 0.4
+Requires:	vala-libdbusmenu >= 0.4
 Requires:	vala-libgee0.6 >= 0.6.0
 
 %description -n vala-libunity

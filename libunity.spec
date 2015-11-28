@@ -6,7 +6,7 @@ Summary:	Unity instrumenting and integration library
 Summary(pl.UTF-8):	Biblioteka oprzyrządowania i integracji Unity
 Name:		libunity
 Version:	6.12.0
-Release:	2
+Release:	3
 License:	LGPL v3
 Group:		Libraries
 Source0:	https://launchpad.net/libunity/6.0/%{version}/+download/%{name}-%{version}.tar.gz

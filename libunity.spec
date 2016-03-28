@@ -1,12 +1,12 @@
 #
 # Conditional build:
 %bcond_without	static_libs	# static library
-#
+
 Summary:	Unity instrumenting and integration library
 Summary(pl.UTF-8):	Biblioteka oprzyrządowania i integracji Unity
 Name:		libunity
 Version:	6.12.0
-Release:	3
+Release:	4
 License:	LGPL v3
 Group:		Libraries
 Source0:	https://launchpad.net/libunity/6.0/%{version}/+download/%{name}-%{version}.tar.gz
@@ -95,6 +95,9 @@ Requires:	vala >= 2:0.16.0
 Requires:	vala-dee >= 1.0.14
 Requires:	vala-libdbusmenu >= 0.4
 Requires:	vala-libgee0.6 >= 0.6.0
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description -n vala-libunity
 Vala API for LibUnity.

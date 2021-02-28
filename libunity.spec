@@ -96,9 +96,7 @@ Requires:	vala >= 2:0.16.0
 Requires:	vala-dee >= 1.0.14
 Requires:	vala-libdbusmenu >= 0.4
 Requires:	vala-libgee0.6 >= 0.6.0
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description -n vala-libunity
 Vala API for LibUnity.

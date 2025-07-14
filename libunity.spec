@@ -106,7 +106,7 @@ API języka Vala do biblioteki LibUnity.
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %configure \
